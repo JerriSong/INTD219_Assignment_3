@@ -413,7 +413,6 @@ document.addEventListener('DOMContentLoaded', function() {
             draggableArea.scrollLeft = scrollLeft - walk;
         });
 
-        // 鼠标释放或离开时结束拖动
         draggableArea.addEventListener('mouseup', () => {
             isDragging = false;
             draggableArea.style.cursor = 'grab';
