@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIONA.EO</title>
+    
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet"> 
+    <link rel="stylesheet" href="works.css">
+</head>
+<body>
+    <!-- adding page overlay -->
+    <div class="page-overlay"></div>
+    <!-- adding page transition -->
+    <div class="page-transition"></div>
+    
+    <!-- Custom cursor elements -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-circle" id="cursor-circle"></div>
+    
+    <!-- Top scrolling banner - fixed at the top with underline -->
+    <div class="scrolling-banner" id="topBanner">
+        <div class="scrolling-content">
+            <span class="banner-item">STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO<span class="banner-item">STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止</span>
+            <span class="banner-item">STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止</span>
+            <span class="banner-item">STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止</span>
+        </div>
+    </div>
+    
+    <!-- Mobile header - navbar -->
+    <div class="mobile-header">
+        <div class="mobile-logo"><a href="new/STUDIO NA.EO(3).html">STUDIO</a></div>
+    </div>
+ 
+    <!-- Grid background -->
+    <div class="grid-background"></div>
+ 
+    <!-- Mobile menu toggle - menu icon -->
+    <button class="menu-toggle" id="menuToggle" data-cursor-type="menu">
+        <svg width="34" height="34" viewBox="0 0 100 100">
+            <rect class="menu-bar top-bar" width="80" height="6" x="10" y="35" fill="#060001"></rect>
+            <rect class="menu-bar bottom-bar" width="80" height="6" x="10" y="55" fill="#060001"></rect>
+        </svg>
+    </button>
+ 
+    <!-- Mobile menu - 黑底白字菜单 -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="close-button" id="closeMenu" data-cursor-type="close-menu">
+        </div>
+        
+        <div class="menu-title">Menu</div>
+        
+        <div class="main-links">
+            <a href="../works.html">Works</a>
+            <a href="new/STUDIO NA.EO(3).html">About</a>
+           
+        </div>
+        
+        <div class="bottom-section">
+            <div class="menu-title">Get in touch</div>
+            <div class="contact-links">
+                <a href="mailto:mazzybox@foxmail.com">mazzybox@foxmail.com</a>
+                <a href="#workflow">Our workflow</a>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="main-container">
+        <!-- Fixed Navigation Bar -->
+        <nav class="navbar" id="navbar">
+            <div class="logo"><a href="new/STUDIO NA.EO(3).html" data-transition>STUDIO</a></div>
+            <div class="nav-item-main">
+                <a href="new/STUDIO NA.EO(3).html" class="about-link" data-transition>ABOUT</a>
+            </div>
+            <div class="nav-item-main" id="worksNav">WORKS</div>
+            <div class="nav-item-sub" id="latestWorksNav"><a href="#latest-works">LATEST WORKS</a></div>
+            <div class="nav-item-sub" id="otherWorksNav"><a href="#other-works">OTHER WORKS</a></div>
+        </nav>
+ 
+        <!-- Content Area -->
+        <div class="content-area">
+            <!-- Works Section -->
+            <section id="works" class="works-container">
+                <!-- Latest Works -->
+                <div id="latest-works">
+                    <h2 class="section-title"><span>LATEST</span> WORKS</h2>
+                    
+                    <div class="latest-works">
+                        <!-- YOUTO work item with video -->
+                        <a href="new/youto.html" class="work-item" data-cursor-type="explore">
+                            <div class="work-image-container">
+                                <div class="media-container">
+                                    <div class="branding-tag">#Branding</div>
+                                    <img src="new/img/latestworks/image 11.png" alt="YOUTO project" class="work-image">
+                                    <!-- Video element - Will show on hover -->
+                                    <video class="work-video" loop muted preload="auto" data-src="new\img\video\youtong.mp4"></video>
+                                </div>
+                            </div>
+                            <div class="work-info-container">
+                                <div class="work-title">CL: 优瞳youto</div>
+                                <div class="work-description">Contact lens product coordinates</div>
+                            </div>
+                        </a>
+                        
+                        <!-- Hunogigi work item with video -->
+                        <div class="work-item" data-cursor-type="explore">
+                            <div class="work-image-container">
+                                <div class="media-container">
+                                    <div class="branding-tag">#Branding</div>
+                                    <img src="new/img/latestworks/image 10.png" alt="hunogigi project" class="work-image">
+                                    <!-- Video element - Will show on hover -->
+                                    <video class="work-video" loop muted preload="auto" data-src="new/img/video/hunogigi.mp4"></video>
+                                </div>
+                            </div>
+                            <div class="work-info-container">
+                                <div class="work-title">CL: kunogigi</div>
+                                <div class="work-description">Design of the main kunogigi logo</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Scrollable works - Modified to use the drag to scroll interaction -->
+                    <div class="scrollable-works" id="draggableWorks">
+                        <div class="scrollable-work" data-cursor-type="drag">
+                            <div style="position: relative;">
+                                <div class="branding-tag">#Product</div>
+                                <img src="new/img/latestworks/image 9.png" alt="EUO project 1" class="work-image">
+                            </div>
+                            <div class="scrollable-work-info">
+                                <div class="scrollable-work-description">Beu</div>
+                                <div class="scrollable-work-title">Focus on women's self-pleasure</div>
+                            </div>
+                        </div>
+                        
+                        <div class="scrollable-work" data-cursor-type="drag">
+                            <div style="position: relative;">
+                                <div class="branding-tag">#Exhibition</div>
+                                <img src="new/img/latestworks/image8.jpeg" alt="EUO project 2" class="work-image">
+                            </div>
+                            <div class="scrollable-work-info">
+                                <div class="scrollable-work-description">About Revue Faire</div>
+                                <div class="scrollable-work-title">Revue Faire Parallel Interfacing" Exhibition</div>
+                            </div>
+                        </div>
+                        
+                        <div class="scrollable-work" data-cursor-type="drag">
+                            <div style="position: relative;">
+                                <div class="branding-tag">#UX Design</div>
+                                <img src="new/img/latestworks/image12.jpg" alt="EUO project 3" class="work-image">
+                            </div>
+                            <div class="scrollable-work-info">
+                                <div class="scrollable-work-description">
+啫喱app</div>
+                                <div class="scrollable-work-title">Metaverse" social software</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Other Works Section -->
+                <div id="other-works">
+                    <h2 class="section-title"><span>OTHER</span> <span style="font-style: italic; font-weight: 400;">WORKS</span></h2>
+            
+                    <div class="other-works">
+                        <div class="col">
+                            <div class="other-work" data-cursor-type="explore-white">
+                                <img src="new/img/otherworks/image 12.png" alt="Other work 1" class="work-image">
+                            </div>
+                            <div class="other-work" data-cursor-type="explore-white">
+                                <img src="new/img/otherworks/image 13.png" alt="Other work 2" class="work-image">
+                            </div>
+                            <div class="other-work" data-cursor-type="explore-white">
+                                <img src="new/img/otherworks/image 14.png" alt="Other work 3" class="work-image">
+                            </div>
+                            <div class="other-work" data-cursor-type="explore-white">
+                                <img src="new/img/otherworks/image 15.png" alt="Other work 4" class="work-image">
+                            </div>
+                        </div>
+                        
+                        <!-- 2nd column -->
+                        <div class="col">
+                            <div class="other-work" data-cursor-type="explore-white">
+                                <img src="new/img/otherworks/image 16.png" alt="Other work 5" class="work-image">
+                            </div>
+                            <div class="other-work" data-cursor-type="explore-white">
+                                <img src="new/img/otherworks/image 17.png" alt="Other work 6" class="work-image">
+                            </div>
+                            <div class="other-work" data-cursor-type="explore-white">
+                                <img src="new/img/otherworks/image 18.png" alt="Other work 7" class="work-image">
+                            </div>
+                            <div class="other-work" data-cursor-type="explore-white">
+                                <img src="new/img/otherworks/image 19.png" alt="Other work 8" class="work-image">
+                            </div>
+                        </div>
+                        
+                        <!-- 3rd column -->
+                        <div class="col">
+                            <div class="other-work" data-cursor-type="explore-white">
+                                <img src="new/img/otherworks/image 20.png" alt="Other work 9" class="work-image">
+                            </div>
+                            <div class="other-work" data-cursor-type="explore-white">
+                                <img src="new/img/otherworks/image 21.png" alt="Other work 10" class="work-image">
+                            </div>
+                            <div class="other-work" data-cursor-type="explore-white">
+                                <img src="new/img/otherworks/image 22.png" alt="Other work 11" class="work-image">
+                            </div>
+                            <div class="other-work" data-cursor-type="explore-white">
+                                <img src="new/img/otherworks/image 23.png" alt="Other work 12" class="work-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#" class="back-to-top">Back To Top ↑</a>
+            </section>
+        </div>
+    </div>
+    
+    <!-- Mobile Back to Top button -->
+    <div class="mobile-back-to-top" id="mobileBackToTop">Back To Top ↑</div>
+    
+    <!-- Footer with dark background - full width but content centered -->
+    <div class="footer-wrapper" id="footer">
+        <!-- Footer banner with larger text and underline -->
+        <div class="footer-banner">
+            <div class="scrolling-content">
+                <span class="banner-item">STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止</span>
+                <span class="banner-item">STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止</span>
+                <span class="banner-item">STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止</span>
+            </div>
+        </div>
+        
+        <!-- Desktop footer content -->
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>STUDIO</h3>
+                <a href="#works">WORKS</a>
+            </div>
+            
+            <div class="footer-column">
+                <h3>WORK</h3>
+                <a href="#latest-works">LATEST WORKS</a>
+                <a href="#other-works">OTHER WORKS</a>
+            </div>
+            
+            <div class="footer-column">
+                <h3>ABOUT</h3>
+                <a href="#STUDIO-INFO">STUDIO INFO</a>
+                 <a href="#ME">ME</a>
+            </div>
+            <div class="footer-column footer-contact">
+                <h3>CONTACT</h3>
+                <p>BEIJING, CHINA</p>
+                <p>Mail: mazzybox@foxmail.com</p>
+            </div>
+        </div>
+        
+        <!-- Mobile footer styled exactly like the image - left aligned (no scrolling banner) -->
+        <div id="mobile-footer" class="mobile-footer">
+            <div class="scrolling-content">
+                <span class="banner-item">STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止</span>
+                <span class="banner-item">STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止</span>
+            </div>
+            <div class="beijing-text">BEIJING, CHINA</div>
+            <div class="address-text">北京市朝阳区东风南路7号院</div>
+            <div class="email-container">mazzybox@foxmail.com</div>
+        </div>
+    </div>
+    <script src="works.js"></script>
+</body>
+</html>

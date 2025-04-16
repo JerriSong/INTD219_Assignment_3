@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIO NA.EO</title>
+   <link rel="stylesheet" href="STUDIO.css">
+</head>
+<body>
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <!-- Mobile header - white logo -->
+    <div class="mobile-header">
+        <div class="mobile-logo"><a href="../new/STUDIO NA.EO(3).html">STUDIO</a></div>
+    </div>
+
+    <!-- Mobile menu toggle - menu icon -->
+    <button class="menu-toggle" id="menuToggle" data-cursor-type="menu">
+        <svg width="34" height="34" viewBox="0 0 100 100">
+            <rect class="menu-bar top-bar" width="80" height="6" x="10" y="30" fill="#060001"></rect>
+            <rect class="menu-bar bottom-bar" width="80" height="6" x="10" y="50" fill="#060001"></rect>
+        </svg>
+    </button>
+
+    <!-- Mobile menu - hidden by default -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="close-button" id="closeMenu" data-cursor-type="close-menu">
+        </div>
+        
+        <div class="menu-title">Menu</div>
+        
+        <div class="main-links">
+            <a href="../works.html">Works</a>
+            <a href="STUDIO NA.EO(3).html">About</a>
+        </div>
+        
+        <div class="bottom-section">
+            <div class="menu-title">Get in touch</div>
+            <div class="contact-links">
+                <a href="mailto:mazzybox@foxmail.com">mazzybox@foxmail.com</a>
+                <a href="#workflow">Our workflow</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-back-to-top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </div>
+
+    <!-- Page transition element (for both desktop and mobile) -->
+    <div class="page-transition"></div>
+    
+    <!-- Custom cursor element -->
+    <div id="cursor" class="cursor-dot"></div>
+
+    <div class="container">
+        <!-- Desktop Navigation (>768px) -->
+        <div class="nav">
+            <div class="logo">STUDIO</div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-items">
+                <div class="nav-item-main">ABOUT</div>
+                <div class="nav-item-sub" id="studio-info-nav"><a href="#about">STUDIO</a></div>
+            <div class="nav-item-sub" id="me-nav"><a href="#me">ME</a></div>
+                <div class="nav-item-main" data-transition>
+                    <a href="../works.html">WORKS</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <!-- Desktop Header (>768px) -->
+            <div class="glass-effect"></div>
+            
+            <div class="header">
+                <div class="studio-title">
+                    <div>NA.</div>
+                    <div>EO</div>
+                </div>
+                
+                <div class="header-info">
+                    <!-- Two column layout for Studio Info -->
+                    <div class="studio-info" id="about">
+                        <div class="studio-name">STUDIO NA.EO</div>
+                        <div class="studio-description">
+                            is a design studio based in Beijing & Shanghai.
+                            <div style="margin-top: 20px; max-width: 100%">
+                                We specialized in Brand identities, motion graphics, commercials, websites, posters, books signage, and more.
+                            </div>
+                            <div class="contact" style="margin-top: 10px;font-weight:700;">
+                                Contact Us: mazzybox@foxmail.com
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Two column layout for Mazzybox Info -->
+                    <div class="mazzybox-info">
+                        <div class="mazzybox-name">Mazzybox</div>
+                        <div class="mazzybox-bio">
+                            I am a Chinesse former senior designer and editor of New Vision, creative director of The New York Times Science Times Chinese edition, and art
+                            director of The New York Times China. 2011 founded Cover, an independent magazine. 2013 I joined Spit Hairball Graphic Design, and
+                            2015 reorganized with George Liu and set up Ban Studio. Editorial design
+                            preferences,
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scrollable-content" id="parallax-container">
+                <!-- Desktop Content (>768px) -->
+                <div class="chinese-text" data-speed="0.1">立入禁止</div>
+          
+                <div class="large-text" data-speed="0.15" style="opacity: 0; transform: translateY(100px);">STUDIO</div>
+                <div class="large-text" data-speed="0.2" style="opacity: 0; transform: translateY(100px);">NA.EO</div>
+           
+                
+                <!-- ME section with two column layout - Desktop only -->
+                <div class="me-section" id="me">
+                    <div class="image-container">
+                        <a href="https://www.instagram.com/mazzybox/" target="_blank">
+                            <img src="./img/profile1.png" class="parallax-img" data-speed="-0.1" alt="Designer Image 1">
+                        </a>
+                        <a href="https://www.instagram.com/mazzybox/" target="_blank">
+                            <img src="./img/profile2.png" class="parallax-img" data-speed="0.15" alt="Designer Image 2">
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Mobile Content (<=768px) -->
+                <!-- First page - Image 1 -->
+                <div class="first-page-mobile" style="display: none;">
+                    <div class="chinese-characters-mobile">立入禁止</div>
+                    <div class="studio-text-container-mobile">
+                        <div class="studio-text-mobile">STU</div>
+                        <div class="studio-text-mobile">DIO</div>
+                        <div class="studio-text-mobile">NA.</div>
+                        <div class="studio-text-mobile">EO</div>
+                    </div>
+                    <!-- First page scrolling banner -->
+                    <div class="scrolling-banner-mobile">
+                        <div class="scrolling-content-mobile">
+                            STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Second page - Image 2 -->
+                <div class="second-page-mobile" style="display: none;">
+                    <div class="latest-works-mobile">ABOUT <span>      STUDIO</span></div>
+                    <div class="studio-info-mobile">
+                        <div class="studio-name-mobile">STUDIO NA.EO</div>
+                        <div class="studio-description-mobile">
+                            is a design studio based in Beijing & Shanghai. We specialized in Brand identities, motion graphics, commercials, websites, posters, books signage, and more.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Third page - Image 3 -->
+                <div class="third-page-mobile" style="display: none;">
+                    <div class="designer-profile-mobile">ABOUT<span> ME</span></div>
+                    <div class="designer-name-mobile">Mazzybox</div>
+                    <div class="designer-bio-mobile">
+                        I am a Chinesse former senior designer and editor of New Vision, creative director of The New York Times Science Times Chinese edition, and art director of The New York Times China. 2011 founded Cover, an independent magazine. 2013 I joined Spit Hairball Graphic Design, and 2015 reorganized with George Liu and set up Ban Studio. Editorial design preferences,
+                    </div>
+                    <div class="designer-images-mobile">
+                        <img src="./img/profile1.png" alt="Designer portrait" class="designer-image-mobile">
+                        <img src="./img/profile2.png" alt="Designer in gallery" class="designer-image-mobile">
+                    </div>
+                    
+                    <div class="mobile-footer">
+                        <!-- <div class="scrolling-content">
+                           <span class="banner-item">STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止</span> -->
+                            <!-- <span class="banner-item">STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止</span> -->
+                        <!-- </div> --> 
+                        <div class="beijing-text">BEIJING, CHINA</div>
+                        <div class="address-text">北京市朝阳区东风南路7号院</div>
+                        <a href="mailto:mazzybox@foxmail.com" class="email-container">mazzybox@foxmail.com</a>
+                    </div>
+                </div>
+                
+                <div id="works" style="height: 100vh; padding-top: 40px;"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mouse-follower-container" id="followerContainer"></div>
+    <!-- Footer with dark background - full width but content centered -->
+<div class="footer-wrapper" id="footer">
+    <div class="footer-banner">
+        <div class="scrolling-content">
+            <span class="banner-item">STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止</span>
+            <span class="banner-item">STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止</span>
+            <span class="banner-item">STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁
+            <span class="banner-item">STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止 STUDIONA.EO 立入禁止</span>
+        </div>
+    </div>
+    
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3>STUDIO</h3>
+            <a href="#works">WORKS</a>
+        </div>
+        
+        <div class="footer-column">
+            <h3>WORK</h3>
+            <a href="#latest-works">LATEST WORKS</a>
+            <a href="#other-works">OTHER WORKS</a>
+        </div>
+        
+        <div class="footer-column">
+            <h3>ABOUT</h3>
+            <a href="#STUDIO-INFO">STUDIO</a>
+            <a href="#ME">ME</a>
+        </div>
+        <div class="footer-column footer-contact">
+            <h3>CONTACT</h3>
+            <p>BEIJING, CHINA</p>
+            <p>Mail: mazzybox@foxmail.com</p>
+        </div>
+    </div>
+</div>
+<script src="STUDIO.js"></script>
+</body>
+</html>
