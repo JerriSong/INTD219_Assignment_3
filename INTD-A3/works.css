@@ -2032,6 +2032,18 @@ body.menu-open .menu-toggle .menu-bar {
     .latest-works .work-info-container {
         margin-bottom: 0 !important;
     }
+    .scrollable-works .scrollable-work:nth-child(2) > div:first-child img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center !important;
+    }
+    .scrollable-works .scrollable-work:nth-child(1) > div:first-child img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center !important;
+    }
 }
 
 /* iPhone 14 Pro Max (430px×932px) */
